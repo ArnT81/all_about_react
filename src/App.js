@@ -10,12 +10,14 @@ import CustomHooks from './CustomHooks';
 import HOC from './HOC';
 import Context from './Context/Provider.js';
 import Redux from './Redux';
+import DefaultProps from './DefaultProps';
 
 
 function App() {
   return (
     <div>
-      <Components/>
+      <DefaultProps />
+      <Components />
       <Styling />
       <Props />
       <UseEffect />

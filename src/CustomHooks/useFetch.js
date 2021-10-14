@@ -5,8 +5,8 @@ export default function Fetch(uri, method, body) {
     const [data, setData] = useState();
 
     useEffect(() => {
-        getData()
-        return () => getData()
+        getData();
+        return () => getData();
     },[])
 
     async function getData() {
@@ -17,13 +17,12 @@ export default function Fetch(uri, method, body) {
             method,
             headers,
             body
-        }
+        };
 
         try {
-            const response = await fetch(uri, otherParams)
-            const json = await response.json()
-            setData(json)
-            console.log(json);
+            const response = await fetch(uri, otherParams);
+            const json = await response.json();
+            setData(json);
         }
         catch (error) {
             console.log(error);

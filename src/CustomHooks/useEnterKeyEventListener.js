@@ -14,7 +14,6 @@ export default function useEnterKeyEventListener() {
     }, []);
 
     function downHandler({ key }) {
-        console.log(key);
         if (key === 'Enter') {
             setEnterkeyWasPressed(true);
         }

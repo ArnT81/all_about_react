@@ -1,6 +1,9 @@
+//  HOC´s
 import WithCounter from "./WithCounter";
 import WithWrapper from './WithWrapper';
 
+
+//  When using HIGHER ORDER COMPONENTS (HOC´s) you will only get logic from the closets wrapping component if not previous props is handled in the HOC itself
 function OriginalComponent({ name, count, incrementCount, decrementCount }) {
     return (
         <div>
