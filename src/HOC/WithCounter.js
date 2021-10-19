@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 
 const WithCounter = (OriginalComponent) => {
     //  All logic intended to be shared shall be in the "NewComponent"
-
     //  FUNCTION COMPONENT
-    function NewComponent() {
+    function NewComponent(props) {
         const [count, setCount] = useState(0)
 
         function incrementCount() {
@@ -21,6 +20,7 @@ const WithCounter = (OriginalComponent) => {
                 count={count}
                 incrementCount={incrementCount}
                 decrementCount={decrementCount}
+                {...props}
             />
         );
     }
