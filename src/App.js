@@ -11,12 +11,14 @@ import HOC from './HOC';
 import Context from './Context/Provider.js';
 import Redux from './Redux';
 import DefaultProps from './DefaultProps';
+import UseRef from './useRef';
 
 
 function App() {
   return (
     <div>
-      <DefaultProps />
+      <UseRef/>
+     {/*  <DefaultProps />
       <Components />
       <Styling />
       <Props />
@@ -24,7 +26,7 @@ function App() {
       <CustomHooks />
       <HOC />
       <Context />
-      <Redux />
+      <Redux /> */}
     </div>
   );
 }

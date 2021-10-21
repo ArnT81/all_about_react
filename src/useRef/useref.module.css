@@ -1,0 +1,14 @@
+.form {
+    width: fit-content;
+    padding: 20px;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.form input {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 6px;
+}
