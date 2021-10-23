@@ -26,7 +26,7 @@ function UseRef() {
     const toggleFocus = (e) => {
         e.preventDefault();
 
-        if (i == refs.length - 1) {
+        if (i === refs.length - 1) {
             i = 0;
             refs[i].current.focus();
         }

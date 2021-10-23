@@ -37,11 +37,6 @@ function Redux() {
                     <li>
                         Combine if more than one
                     </li>
-                    <li>
-
-                    </li>
-
-
                 </ol>
             </div>
             <Consumer />

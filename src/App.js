@@ -12,21 +12,23 @@ import Context from './Context/Provider.js';
 import Redux from './Redux';
 import DefaultProps from './DefaultProps';
 import UseRef from './useRef';
+import Routing from './Routing';
 
 
 function App() {
   return (
     <div>
-      <UseRef/>
-     {/*  <DefaultProps />
+      <Routing />
+      <DefaultProps />
       <Components />
       <Styling />
       <Props />
       <UseEffect />
+      <UseRef />
       <CustomHooks />
       <HOC />
       <Context />
-      <Redux /> */}
+      <Redux />
     </div>
   );
 }
