@@ -7,6 +7,7 @@ import allReducers from './reducers';
 import { Provider } from 'react-redux';
 //  HOC
 import WithWrapper from '../HOC/WithWrapper';
+import WithStoreToProps from './WithStoreToProps';
 
 
 //  Normally in index.js
@@ -40,6 +41,10 @@ function Redux() {
                 </ol>
             </div>
             <Consumer />
+            <br />
+            <hr />
+            <WithStoreToProps />
+
         </Provider>
     )
 }

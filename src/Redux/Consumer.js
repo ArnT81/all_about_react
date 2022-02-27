@@ -2,6 +2,7 @@ import React from 'react';
 //  REDUX
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement, login } from './actions';
+import WithStoreToProps from './WithStoreToProps';
 
 export default function Consumer() {
     const counter = useSelector(state => state.counter);
