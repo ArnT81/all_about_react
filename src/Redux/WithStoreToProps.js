@@ -11,7 +11,7 @@ function WithStoreToProps(props) {
     //  For testing purposes this might be preferred
     const login = () => {
         console.log(props.login().type);
-        props.login()
+        dispatch(props.login())
     }
 
     //  Or with useDispatch() as on increment below (or index.js)

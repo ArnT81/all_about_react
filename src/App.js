@@ -13,6 +13,7 @@ import Redux from './Redux';
 import DefaultProps from './DefaultProps';
 import UseRef from './useRef';
 import Routing from './Routing';
+import MultipleClasses from './MultipleClasses';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Routing />
       <DefaultProps />
       <Components />
-      <Styling />
+      <Styling color='purple' />
       <Props />
       <UseEffect />
       <UseRef />
@@ -28,6 +29,7 @@ function App() {
       <HOC />
       <Context />
       <Redux />
+      <MultipleClasses />
     </div>
   );
 }

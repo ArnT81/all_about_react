@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import styles from './styling.module.css';
 
 
-export default function Styling() {
+export default function Styling(props) {
     const [color, setColor] = useState('blue');
 
     //  FUNCTIONS
@@ -35,6 +35,9 @@ export default function Styling() {
 
             {/* From state */}
             <h2 style={{ color }}>From state</h2>
+
+            <h2 style={{ color: props.color }}>From props</h2>
+
             <button onClick={changeColor}>Change color</button>
         </div>
     )

@@ -1,0 +1,20 @@
+.button {
+	all: unset;
+	width: fit-content;
+	padding: 8px 16px;
+	font-size: larger;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.button::first-letter {
+	text-transform: capitalize;
+}
+
+.contained {
+	color: white;
+}
+
+.outlined {
+	box-shadow: inset 0px 0px 0px 2px currentColor;
+}

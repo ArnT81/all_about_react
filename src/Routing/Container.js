@@ -17,7 +17,7 @@ function Container() {
             <div>
                 <h2>Routing</h2>
                 <h3>(with lazy loading)</h3>
-                <p>requires npm package "react-router-dom"</p>
+                <p>requires npm package "react-router-dom" (v5)</p>
             </div>
 
             {/* Ordinary link */}
