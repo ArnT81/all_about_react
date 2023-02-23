@@ -2,13 +2,14 @@ import React from 'react'
 import styles from './button.module.css'
 
 
-export default function Button({ title, variant, color }) {
+export default function Button({ title, variant, color, onClick }) {
 
 	if (variant == 'contained') {
 		return (
 			<button
-				className={[styles.button, styles.contained].join(' ')}
-				style={{ background: color }}
+			className={[styles.button, styles.contained].join(' ')}
+			style={{ background: color }}
+			onClick={onClick}
 			>
 				{title}
 			</button>
@@ -20,6 +21,7 @@ export default function Button({ title, variant, color }) {
 			<button
 				className={`${styles.button} ${styles.outlined}`}
 				style={{ color }}
+				onClick={onClick}
 			>
 				{title}
 			</button>
@@ -30,6 +32,7 @@ export default function Button({ title, variant, color }) {
 		<button
 			className={styles.button}
 			style={{ color }}
+			onClick={onClick}
 		>
 			{title}
 		</button>

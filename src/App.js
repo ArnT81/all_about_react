@@ -14,6 +14,7 @@ import DefaultProps from './DefaultProps';
 import UseRef from './useRef';
 import Routing from './Routing';
 import MultipleClasses from './MultipleClasses';
+import ContitionalRendering from './ConditionalRendering';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Context />
       <Redux />
       <MultipleClasses />
+      <ContitionalRendering />
     </div>
   );
 }
